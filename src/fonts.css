@@ -1,0 +1,221 @@
+@import '../node_modules/boxicons/css/boxicons.min.css';
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+@font-face{
+    font-family: Regular;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: Bold;
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+@font-face{
+    font-family: Extra-bold;
+    src: url(./fonts/Montserrat-ExtraBold.ttf);
+}
+
+.row{
+    margin: 0px !important;
+}
+
+*{
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+a.active{
+    background: lightgray !important;
+    color: royalblue !important;
+}
+
+
+.boleft{
+    border-right: 1px solid lightgray !important;
+}
+@media(max-width:767px){
+    
+    .minmd-bt{
+        border-top: 1px solid lightgray;
+    }
+
+    .boleft{
+        border: none !important;
+    }
+}
+
+.dropdown-menu-right{
+    margin-top: 10px;
+}
+
+.dropdown-menu-right::after{
+    content: " ";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid !important;
+    border-color: transparent  transparent  white transparent ;
+    border-width: 10px !important;
+    top: -20px;
+    display: block;
+    right:15%;
+    filter: drop-shadow(0px -1px 0px rgba(0,0,0,0.2));
+    -webkit-filter: drop-shadow(0px -1px 0px rgba(0,0,0,0.2));
+    transform: rotateY(40deg) !important;
+}
+
+a.dropdown-item{
+    font-size: 14px !important;
+    display: block;
+    transition: .3s;
+}
+
+div.ql-editor:focus{
+    border: 1px solid lightskyblue !important;
+    box-shadow: 0 3px 3px -3px lightskyblue !important;
+}
+
+.slick-slide:active{
+    cursor: grabbing !important;
+}
+
+.page_title{
+    font-family: Bold;
+    font-size: 25px;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.page_title::before{
+    position: absolute;
+    content:  " ";
+    height: 3px;
+    width: 70px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #4E7DF1 ;
+}
+.form-group{
+    margin: 10px 0px !important;
+}
+
+.form-group label{
+    font-variant: small-caps;
+    margin-bottom: 10px;
+}
+
+.btn-pagination{
+    border: 1px solid #4E7DF1;
+    background: #4E7DF1;
+    color: white;
+    font-family: Regular;
+    padding: 5px 10px;
+    border-radius: 100px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.nav-tabs a.nav-link.active{
+    background: transparent !important;
+    color: #4E7DF1 !important;
+}
+
+.nav-tabs{
+    display: flex !important;
+    justify-content: space-around !important;
+    border-bottom: 1px solid lightgray !important;
+}
+.nav-tabs a{
+    border: none !important;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-weight: 800;
+    color: black !important;
+}
+
+  
+button[tooltip]{
+    z-index: 1;
+}
+  button[tooltip] .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #2a60ebd7;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    font-size: 12px;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  button[tooltip] .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2a60ebd7 transparent transparent transparent;
+  }
+  
+  button[tooltip]:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media(min-width:1200px){
+    .colxl2{
+        width: 20%;
+    }
+  }
+
+
+  .anim{
+      position: relative;
+  }
+
+  .anim span{
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      font-size: 20px;
+      width: 40px;
+      font-family: Bold;
+      height: 40px;
+      border-radius: 100px;
+      background: linear-gradient(134deg , rgb(0, 132, 255) , rgb(5, 175, 82));
+      top: -10px;
+      right: -10px;
+      animation: hide 2s ease forwards;
+  }
+
+  @keyframes hide{
+      from{
+          top: -10px;
+          right: -10px;
+          opacity: 1;
+          transform: none;
+      }
+
+      to{
+          transform: scale(4);
+          opacity: 0;
+          display: none;
+      }
+  }
+
+  @media(max-width:620px){
+      .nav .nav-link.active{
+          font-size: 14px !important;
+      }
+  }

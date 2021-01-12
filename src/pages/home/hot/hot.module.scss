@@ -1,0 +1,228 @@
+.hot{
+    width: 100%;
+    position:relative;
+    padding:2rem;
+    overflow:hidden;
+}
+
+.ind_col{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.hot_items {
+    display: flex;
+    width: 100%;
+
+    @media (max-width: 990px) {
+        flex-wrap: wrap;
+    }
+}
+
+.last_hot_card {
+    width: 50%;
+
+    .main {
+        width: 97% !important;
+        height: 100%;
+
+        a {
+            top: 6px;
+        }
+    }
+
+    @media (max-width: 990px) {
+        width: 100%;
+    }
+}
+
+.hot_cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+
+    &_item {
+        display: flex;
+        width: 100%;
+
+        @media (max-width: 990px) {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 550px) {
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .simple {
+        margin-bottom: 5px;
+        width: 50% !important;
+        height: 100%;
+
+        a {
+            font-size: 15px;
+            top: 9px;
+        }
+
+        button {
+            width: 150px;
+            height: 44px;
+            font-size: 17px;
+            padding: 0px 5px 10px;
+        }
+
+        @media (max-width: 550px) {
+            width: 100% !important;
+        }
+    }
+
+    @media (max-width: 990px) {
+        & { 
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+
+    
+    
+}
+
+
+
+
+
+
+.box{
+    position:relative;
+    box-shadow:0px 0px 5px rgba(black,0.2);
+    width: 98%;
+    height: 350px;
+    margin: 0px 2%;
+    border-radius: 5px;
+    overflow: hidden;
+
+    @media(max-width:768px){
+        margin-top:2rem;
+    }
+
+    @media(max-width:900px){
+        height: 250px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    &:hover{
+        &::after{
+            background: rgba(0, 0, 0, 0.7);
+            background-blend-mode: soft-light;
+            z-index: 2;
+        }
+
+        button{
+            z-index: 3 ;
+            pointer-events: all;
+            visibility: visible;
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        &>p {
+            opacity: .5;
+        }
+    }
+
+    &::after{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 0;
+        right: 0px;
+        bottom: 0px;
+        content: "";
+    }
+
+    a{
+        font-size: 20px;
+        display: block;
+        display: -webkit-box;
+        line-clamp: 2;
+        z-index: 1;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        box-orient: vertical;
+        -mox-box-orient:vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color:white !important;
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        right: 15px;
+        text-transform: lowercase;
+        font-variant: small-caps;
+    }
+
+    &>p{
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        display: block;
+        display: -webkit-box;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        z-index: 1;
+        overflow: hidden;
+        color:  #fff !important;
+        background-color: #4E7DF1;
+        word-spacing: 1px;
+        font-size: 14px;
+        z-index: 10;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0px;
+        padding: 0px 15px 5px;
+        left: 0px;
+        right: 0px;
+        margin-bottom: 0 !important;
+    }
+
+    button{
+        width: 200px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: .3s;
+        z-index: 1;
+        transform: translate(110%,110%) scale(0);
+        font-size: 20px;
+        text-transform: lowercase;
+        font-variant: small-caps;
+        background: transparent;
+        border: 1px solid rgb(59, 151, 255);
+        color: white;
+        padding: 6px 10px;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 1;
+        pointer-events: none;
+    }
+}
+
+
+.hot_card {
+    width: 50%;
+}
+
+.hot_card_img{
+    width: 200px;
+}
