@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f2bdb801-b518-4728-8d41-f2138b7947ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/storeCart/StoreNavbarMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/storeCart/StoreNavbarMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/cartReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/cartReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/productReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/productReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/wishlistReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/wishlistReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +28,7 @@
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1kXlCYHJHVvW690pJuireZUr5tL" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
@@ -112,7 +116,9 @@
       <workItem from="1610340419470" duration="21803000" />
       <workItem from="1610369622907" duration="920000" />
       <workItem from="1610373817801" duration="97000" />
-      <workItem from="1610439895039" duration="2844000" />
+      <workItem from="1610439895039" duration="10250000" />
+      <workItem from="1610460238415" duration="14000" />
+      <workItem from="1610528323431" duration="1792000" />
     </task>
     <servers />
   </component>

@@ -7,5 +7,5 @@ const productReducer = createReducer({}, builder =>{
             state = action.payload;
             return state;
         })
-})
+});
 export default productReducer;

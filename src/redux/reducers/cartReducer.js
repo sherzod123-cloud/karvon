@@ -30,11 +30,11 @@ const CartReducer = createReducer(initial , builder => {
                 if(item.product._id === action.payload.id){
                     item.count = action.payload.count;
                 }
-            })
+            });
             localStorage.setItem('cart',JSON.stringify(state));
             return state;
         })
         .addDefaultCase((state,action)=>(state))
-})
+});
 
 export default CartReducer;

@@ -16,10 +16,10 @@ function StoreNavbarMenu() {
                     <NavLink href="#" className={"navStyle"}>Today</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#" className={"navStyleChild"}>This week</NavLink>
+                    <NavLink href="#" className={"navStyleChild"}>Products</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#" className={"navStyleChild"}>This Month</NavLink>
+                    <NavLink href="#" className={"navStyleChild"}>Top products</NavLink>
                 </NavItem>
                 {/*<Dropdown nav isOpen={dropdownOpen} toggle={toggle}>*/}
                 {/*    <DropdownToggle nav caret>*/}

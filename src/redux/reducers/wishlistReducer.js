@@ -28,6 +28,6 @@ const WishListReducer = createReducer( initial , (builder) =>{
             return state
         })
 
-})
+});
 
 export default WishListReducer;
